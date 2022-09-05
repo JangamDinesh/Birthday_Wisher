@@ -10,7 +10,8 @@ def sendEmail(number, msg):
     resp = requests.post('https://textbelt.com/text', {
         'phone': '+91' + str(number),
         'message': msg,
-        'key': 'textbelt',
+        'key': 'Enter your API Key here'
+        # Use key = 'textbelt' to access the free version of the API
     })
     print(resp.json())
 
